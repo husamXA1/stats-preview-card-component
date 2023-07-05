@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* Global Rules */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Stats preview card */
+.stats-preview {
+    max-width: 1200px;
+    margin: 250px auto;
+    background-color: hsl(244, 38%, 16%);
+    width: 90%;
+    border-radius: 0.5em;
+    overflow: hidden;
+    text-align: center;
+}
+
+.stats__image {
+    width: 100%;
+}
+
+.stats__picture {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stats__text {
+    padding: 3em 2em;
+}
+
+.stats__title {
+    font-size: 1.9em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.2;
+}
+
+.title__special {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats__description {
+    margin: 2em auto;
+    line-height: 1.8;
+}
+
+.stat__value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat__type {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.stats__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 650px) {
+    .stats__grid {
+        flex-direction: row;
+        padding: 0 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .stats-preview {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats__picture {
+        width: 50%;
+    }
+
+    .stats__image {
+        height: 500px;
+    }
+
+    .stats__text {
+        text-align: left;
+        width: 50%;
+        padding-right: 7em;
+        padding-left: 3em;
+    }
+
+    .stats__title {
+        font-size: 2.5rem;
+    }
+
+    .stats__grid {
+        padding: 0;
+        margin-top: 5em;
+    }
+}
