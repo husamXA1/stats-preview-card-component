@@ -45,7 +45,8 @@ img {
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: hsla(277, 64%, 61%, 50%);
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
     position: absolute;
     top: 0;
     left: 0;
